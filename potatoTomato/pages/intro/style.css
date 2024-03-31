@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    background-color: #64362a;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+    border: 5px solid #c29565;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    animation: logoAnimation 2s ease-in-out;
+}
+
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+        top: 20%;
+    }
+    to{
+        opacity: 100%;
+        top: 30%;
+    }
+}
+
+h1{
+    color: #f5caab;
+    font-size: 2.5em;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    animation: textAnimation 2s ease-in-out;
+}
+
+@keyframes textAnimation{
+    from{
+        opacity: 0;
+        top: 80%;
+    }
+    to{
+        opacity: 100%;
+        top: 60%;
+    }
+}
+
+button{
+    background-color: rgb(208, 87, 0);
+    color: #f5caab;
+    font-size: 2em;
+    font-weight: 750;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    padding: 1% 2.5% 1% 2.5%;
+    border: none;
+    border-radius: 15px;
+    animation: buttonAnimation 2.2s ease-in-out;
+    transition: all .3s ease-out;
+}
+
+@keyframes buttonAnimation{
+    from{
+        opacity: 0;
+        top: 100%;
+    }
+    to{
+        opacity: 100%;
+        top: 80%;
+    }
+}
+
+button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: #2b86ac;
+}
+
+button:active {
+    transition: none;
+    background-color: rgb(48, 141, 255);
+}
+
+p{
+    color: #f5caab;
+    position: absolute;
+    font-size:medium;
+    left: 0;
+    bottom: 0;
+}
+
